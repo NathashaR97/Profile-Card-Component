@@ -1,0 +1,15 @@
+.topsection {
+    background-image: url("../images/bg-pattern-card.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:140px;
+
+    &_image {
+        position: relative;
+        top:60px;
+    }
+}

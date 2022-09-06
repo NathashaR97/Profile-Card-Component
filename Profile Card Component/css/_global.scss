@@ -1,0 +1,19 @@
+html {
+    font-size:100%;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: $blue;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+}

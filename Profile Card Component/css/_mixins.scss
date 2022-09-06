@@ -1,0 +1,56 @@
+$mobile-max-width:760px;
+$mobile-min-width:300px;
+$tablet-width:768px;
+$laptop-width:992px;
+$desktop-width:1024px;
+$desktop-middle-width:1280px;
+$desktop-large-width:1366px;
+$desktop-extralarge-width:1600px;
+
+@mixin mobile {
+    @media only screen and (min-width: #{mobile-min-width}) and (max-width: #{mobile-max-width}) {
+        @content;
+    }
+}
+
+@mixin tablet-landscape {
+    @media only screen and (min-width: #{$laptop-width}) and (max-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet-portrait {
+    @media only screen and (min-width: #{$tablet-width}) and (max-width: #{$laptop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin laptops {
+    @media only screen and (min-width: #{$desktop-width}) and (max-width: #{$desktop-middle-width}) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+ 
+  @mixin middle-desktop {
+      @media (min-width: #{$desktop-middle-width}){
+          @content;
+      }
+  }
+
+  @mixin large-desktop {
+    @media (min-width: #{$desktop-large-width}) {
+      @content;
+    }
+  }
+  
+  @mixin exlarge-desktop {
+    @media (min-width: #{$desktop-extralarge-width}) {
+      @content;
+    }
+  }

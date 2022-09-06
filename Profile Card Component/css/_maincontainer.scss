@@ -1,0 +1,24 @@
+.container {
+    background-color: $white;
+    border-radius: 20px;
+    max-width:400px;
+    min-height: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    margin-top: 200px;
+    width:100%;
+
+    .topcircle {
+        position: fixed;
+        left: 0px;
+        top: -1px;
+        z-index: -9;
+    }
+
+    .bottomcircle {
+        position: fixed;
+        right: 0px;
+        bottom:0px;
+        z-index: -9;
+    }
+}
